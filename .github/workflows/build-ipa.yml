@@ -1,0 +1,59 @@
+name: Build 3105 IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-ipa:
+    name: Build Unsigned IPA
+    runs-on: macos-14
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Version
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_15.4.app || sudo xcode-select -switch /Applications/Xcode.app
+          xcodebuild -version
+
+      - name: Compile and Package IPA
+        run: |
+          mkdir -p build/Payload
+          
+          # Build target dalymmo without code signing
+          xcodebuild clean build \
+            -project ThreeOneOSFive.xcodeproj \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_ENTITLEMENTS="" \
+            CODE_SIGNING_ALLOWED=NO
+
+          # Find the compiled .app bundle
+          APP_PATH=$(find build/DerivedData -name "*.app" -type d | head -n 1)
+          echo "Found compiled app at: $APP_PATH"
+
+          if [ -z "$APP_PATH" ]; then
+            echo "Error: .app bundle not found!"
+            exit 1
+          fi
+
+          # Copy to Payload folder and package into .ipa
+          cp -R "$APP_PATH" build/Payload/
+          cd build
+          zip -qr "dalymmo-unsigned.ipa" Payload
+          echo "IPA package created successfully!"
+          ls -lh dalymmo-unsigned.ipa
+
+      - name: Upload IPA to GitHub Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dalymmo-unsigned-ipa
+          path: build/dalymmo-unsigned.ipa
+          retention-days: 14

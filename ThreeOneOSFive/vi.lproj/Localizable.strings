@@ -15,13 +15,13 @@
 "common.finish" = "Hoàn thành";
 
 "update.title" = "Có bản cập nhật";
-"update.message" = "3105 %@ đã có trên GitHub.";
+"update.message" = "dalymmo %@ đã có trên GitHub.";
 "update.agree" = "Đồng ý";
 "update.dismiss" = "Không hiển thị lại";
 "patch.error.wrong_password" = "Sai mật khẩu.";
 
-"attribution.title" = "Giới thiệu 3105";
-"attribution.subtitle" = "Thông tin dự án";
+"attribution.title" = "Giới thiệu dalymmo";
+"attribution.subtitle" = "dalymmo — Mod bởi leanhminh (Dự án gốc: YangJiii)";
 "attribution.link_section" = "Liên kết dự án";
 "attribution.url" = "URL";
 "attribution.open" = "Mở liên kết";
@@ -31,20 +31,20 @@
 "onboarding.language_title" = "Chọn ngôn ngữ";
 "onboarding.language_subtitle" = "Bạn có thể đổi lại trong Cài đặt.";
 "onboarding.language_hint" = "Đã chọn: %@";
-"onboarding.welcome_title" = "Chào mừng đến với 3105";
-"onboarding.welcome_message" = "Ứng dụng được phát triển bởi YangJiii";
-"onboarding.welcome_badge" = "Định danh chính thức 3105";
+"onboarding.welcome_title" = "Chào mừng đến với dalymmo";
+"onboarding.welcome_message" = "Phát triển & Mod bởi leanhminh (Mã nguồn gốc: YangJiii)";
+"onboarding.welcome_badge" = "dalymmo Official Mod";
 "onboarding.versions_title" = "Phiên bản iOS được hỗ trợ";
-"onboarding.versions_subtitle" = "3105 đã được xác minh trên các khoảng bên dưới. Build ngoài phạm vi sẽ bị chặn.";
+"onboarding.versions_subtitle" = "dalymmo đã được xác minh trên các khoảng bên dưới. Build ngoài phạm vi sẽ bị chặn.";
 "onboarding.versions_footer" = "Thiết bị này: iOS %@ (%@)";
 "onboarding.beta" = "Beta";
 "onboarding.developer_beta" = "Beta nhà phát triển %@";
 "onboarding.public_beta" = "Beta công khai %@";
 "onboarding.install_title" = "Yêu cầu chứng chỉ";
-"onboarding.install_message" = "3105 cần phương thức ký được hỗ trợ để truy cập các tính năng của thiết bị.";
+"onboarding.install_message" = "dalymmo cần phương thức ký được hỗ trợ để truy cập các tính năng của thiết bị.";
 "onboarding.install_ok" = "Hoạt động với chứng chỉ doanh nghiệp, bao gồm eSign và các bản cài enterprise tương tự.";
 "onboarding.install_bad" = "Không hoạt động với SideStore, AltStore, 3uTools hoặc LiveContainer.";
-"onboarding.install_jailbreak" = "Trên iOS 17 đến iOS 18.7.1, 3105 sẽ không hoạt động nếu thiết bị đã jailbreak.";
+"onboarding.install_jailbreak" = "Trên iOS 17 đến iOS 18.7.1, dalymmo sẽ không hoạt động nếu thiết bị đã jailbreak.";
 "onboarding.install_footer" = "Hãy dùng chứng chỉ được hỗ trợ trên thiết bị chưa jailbreak trước khi tiếp tục.";
 
 "dashboard.exploit_access" = "Quyền exploit";

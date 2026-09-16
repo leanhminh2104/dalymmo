@@ -17,7 +17,10 @@ struct SettingsView: View {
                         AppLogo()
 
                         VStack(alignment: .leading, spacing: 3) {
-                            Text("3105").font(.headline)
+                            Text("dalymmo").font(.headline)
+                            Text("Mod bởi leanhminh")
+                                .font(.caption)
+                                .foregroundStyle(AppTheme.accent)
                             Text(language.text("common.version", appVersion))
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
@@ -116,6 +119,11 @@ struct SettingsView: View {
                 }
 
                 Section(language.text("settings.credits")) {
+                    creditsRow(
+                        name: "leanhminh",
+                        role: "Tác giả Mod & Phát triển dalymmo",
+                        url: "https://github.com/leanhminh2104"
+                    )
                     creditsRow(
                         name: "YangJiii",
                         role: language.text("credit.yangjiii"),

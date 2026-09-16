@@ -15,13 +15,13 @@
 "common.finish" = "Finish";
 
 "update.title" = "Update available";
-"update.message" = "3105 %@ is available on GitHub.";
+"update.message" = "dalymmo %@ is available on GitHub.";
 "update.agree" = "OK";
 "update.dismiss" = "Don't show again";
 "patch.error.wrong_password" = "Incorrect password.";
 
-"attribution.title" = "About 3105";
-"attribution.subtitle" = "Project information";
+"attribution.title" = "About dalymmo";
+"attribution.subtitle" = "dalymmo — Modded by leanhminh (Original core by YangJiii)";
 "attribution.link_section" = "Project link";
 "attribution.url" = "URL";
 "attribution.open" = "Open link";
@@ -31,20 +31,20 @@
 "onboarding.language_title" = "Choose your language";
 "onboarding.language_subtitle" = "You can change this later in Settings.";
 "onboarding.language_hint" = "Selected: %@";
-"onboarding.welcome_title" = "Welcome to 3105";
-"onboarding.welcome_message" = "Developed by YangJiii";
-"onboarding.welcome_badge" = "Official 3105 identity";
+"onboarding.welcome_title" = "Welcome to dalymmo";
+"onboarding.welcome_message" = "Modded & Developed by leanhminh (Original code: YangJiii)";
+"onboarding.welcome_badge" = "dalymmo Official Mod";
 "onboarding.versions_title" = "Supported iOS versions";
-"onboarding.versions_subtitle" = "3105 is verified on the ranges below. Unsupported builds are blocked.";
+"onboarding.versions_subtitle" = "dalymmo is verified on the ranges below. Unsupported builds are blocked.";
 "onboarding.versions_footer" = "This device: iOS %@ (%@)";
 "onboarding.beta" = "Beta";
 "onboarding.developer_beta" = "Developer Beta %@";
 "onboarding.public_beta" = "Public Beta %@";
 "onboarding.install_title" = "Certificate requirements";
-"onboarding.install_message" = "3105 requires a supported signing method to access device features.";
+"onboarding.install_message" = "dalymmo requires a supported signing method to access device features.";
 "onboarding.install_ok" = "Works with enterprise certificates, including eSign and similar enterprise installs.";
 "onboarding.install_bad" = "Does not work with SideStore, AltStore, 3uTools or LiveContainer.";
-"onboarding.install_jailbreak" = "On iOS 17 through iOS 18.7.1, 3105 will not work if the device is jailbroken.";
+"onboarding.install_jailbreak" = "On iOS 17 through iOS 18.7.1, dalymmo will not work if the device is jailbroken.";
 "onboarding.install_footer" = "Use a supported certificate on a non-jailbroken device before continuing.";
 
 "dashboard.exploit_access" = "Exploit access";
