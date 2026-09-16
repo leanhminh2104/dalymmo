@@ -330,8 +330,8 @@
 			);
 			dependencies = (
 			);
-			name = 3105;
-			productName = 3105;
+			name = dalymmo;
+			productName = dalymmo;
 			productReference = 3105A010;
 			productType = "com.apple.product-type.application";
 		};

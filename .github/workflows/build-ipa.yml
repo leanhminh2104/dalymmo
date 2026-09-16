@@ -27,16 +27,18 @@ jobs:
           # Build target dalymmo without code signing
           xcodebuild clean build \
             -project ThreeOneOSFive.xcodeproj \
+            -target dalymmo \
             -configuration Release \
             -sdk iphoneos \
-            -derivedDataPath build/DerivedData \
+            SYMROOT="$(pwd)/build/Products" \
+            OBJROOT="$(pwd)/build/Intermediates" \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_ENTITLEMENTS="" \
             CODE_SIGNING_ALLOWED=NO
 
           # Find the compiled .app bundle
-          APP_PATH=$(find build/DerivedData -name "*.app" -type d | head -n 1)
+          APP_PATH=$(find build/Products -name "*.app" -type d | head -n 1)
           echo "Found compiled app at: $APP_PATH"
 
           if [ -z "$APP_PATH" ]; then
